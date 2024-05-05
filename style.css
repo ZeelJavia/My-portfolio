@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: #081b29;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #d3dfe88d;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    z-index: 1;
+    gap: 45px;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    z-index: 10;
+    justify-content: end;
+}
+a:hover{
+    color: #d3dfe8;
+    cursor: pointer;
+}
+.pic{
+    height: 393px;
+    width: 101%;
+    position: relative;
+    left: 19%;
+    top: 30%;
+    scale: 1.5;
+    z-index: -1;
+}
+.heropic{
+    position: absolute;
+    bottom: 12%;
+    left: 57%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.nav .logo{
+    position: relative;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:  100%;
+    height: 100%;
+    background: #081b29;
+    animation: showright 1s ease forwards;
+    animation-delay: .4s;
+}
+.heropic:hover{
+    opacity: 0.5;
+}
+.homemain h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* width:  auto; */
+    height: 100%;
+    background: #081b29;
+    animation: showright 1.7s ease forwards;
+    animation-delay: .6s;
+}
+.homemain .btnbox::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:  100%;
+    height: 100%;
+    background: #081b29;
+    animation: showright 1.5s ease forwards;
+    animation-delay: 1.5s;
+    z-index:  2;
+}
+.homemain h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:  100%;
+    height: 100%;
+    background: #081b29;
+    animation: showright 1s ease forwards;
+    animation-delay: 1.8s;
+}
+.homemain p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:  100%;
+    height: 98%;
+    background: #081b29;
+    animation: showright 1.5s ease forwards;
+    animation-delay: 1.2s;
+}
+@keyframes showright {
+    100%{
+        width: 0;
+    }
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    opacity: .9;
+}
+.homemain h1{
+    position: relative;
+    font-size: 53px;
+    top: 20px;
+    font-weight: bolder;
+    line-height: 1.5;
+    color: whitesmoke;
+}
+.homemain h3{
+    position: relative;
+    font-size: 34px;
+    top: 25px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.homemain p{
+    position: relative;
+    font-size: 20px;
+    line-height: 1.4;
+    top: 30px;
+    margin: 0px 0 20px;
+}
+.homemain{
+    max-width: 57%;
+    /* padding-left: 80px; */
+    position: absolute;
+    left: 2%;
+    top: 17%;
+}
+#check{
+    position: absolute;
+    display: none;
+}
+.cross{
+    display: none;
+}
+img{
+    /* width:  65%; */
+    opacity: 0.9;
+    /* height: 80vh; */
+    padding-top: -100px;
+}
+.homemain .btnbox{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 417px;
+    top: 35px;
+    height: 50px;
+    margin-top: 23px;
+    margin-bottom: 50px;
+}
+.btnbox a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    padding: 5px;
+    height: 100%;
+    background: #00abf0;
+    border: 3px solid #00abf0;
+    border-radius: 15px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #081b29;
+    text-decoration: none;
+    transition: all .9s ease;
+    font-weight: 600;
+    z-index: 1;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+.btnbox a:hover{
+    color: #00abf0;
+}
+.btnbox a:nth-child(2)::before{
+    background-color: #00abf0;
+    color: #000;
+}
+.btnbox a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height:  105%;
+    background: #081b29;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.btnbox a:nth-child(2):hover{
+    color: #081b29;
+}
+.btnbox a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btnbox a:hover::before{
+    width:  100%;
+}
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px 0px;
+  border: transparent;
+  background: #081b29;
+  gap: 50px;
+  box-shadow: 0px 10px 20px rgba(#081b29c4);
+}
+
+.icon{
+    position: absolute;
+    display: none;
+}
+/* for all social containers*/
+.socialContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+/* Github*/
+.containerTwo:hover {
+  background-color: rgba(0, 0, 0, 0.721);
+  transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: green;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 22px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+    .card::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 101%;
+        height: 100%;
+        background: #081b29;
+        animation: showright 1.5s ease-in forwards;
+        animation-delay: 1.7s;
+        z-index: 2;
+    }

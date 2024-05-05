@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #081b29;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-item {
+  gap: 28px;
+}
+nav{
+  display: flex;
+  list-style: none;
+  gap: 45px;
+  z-index: 10;
+  justify-content: end;
+}
+a:hover{
+  color: #d3dfe8;
+  cursor: pointer;
+}
+.nav-link {
+  text-decoration: none;
+  color: #d3dfe88d;
+  padding: 10px;
+}
+#check,.hamburger,.cross{
+  display: none;
+}
+.nav .logo {
+  position: relative;
+  color: rgba(117, 98, 224, 1);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 25px;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.mainslogans {
+  margin: 3rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.allslogans {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  max-width: 70%;
+  color: whitesmoke;
+  align-items: center;
+}
+h2.logo{
+  font-size: 40px;
+  color: rgba(117, 98, 224, 1);
+}
+.names {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  /* background: black; */
+}
+
+.message {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: whitesmoke;
+  text-align: center;
+  z-index: 1;
+  opacity: 0; /* Initially hide messages */
+  animation: showright 1.5s ease-in forwards; /* Define animation */
+}
+
+.message::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: black; */
+  z-index: -1;
+}
+
+@keyframes showright {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1; /* Fade in at halfway point */
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* Pause animation until previous message is fully visible */
+/* .message:nth-child(n + 2) {
+  animation-play-state: paused;
+} */
+
+marquee{
+  background: black;
+}
+/* Fill mode to retain final animation state */
+.message:nth-child(1) {
+  animation-fill-mode: both;
+}
+
+/* Adjust animation delay for sequential appearance */
+.message:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.message:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.message:nth-child(4) {
+  animation-delay: 3s;
+}
+.message:nth-child(5) {
+  animation-delay: 4s;
+}
+.message:nth-child(6) {
+  animation-delay: 5s;
+}
+.message:nth-child(7) {
+  animation-delay: 6s;
+}
+.message:nth-child(8) {
+  animation-delay: 7s;
+}
+.message:nth-child(9) {
+  animation-delay:8s;
+}
+
+/* Add more nth-child rules as needed */

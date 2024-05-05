@@ -1,0 +1,152 @@
+@media only screen and (max-width: 450px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 62vw;
+    background-color: #081b29;
+    scale: 0.9;
+    /* margin: 0 -50px 0 0; */
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 6px;
+  }
+  /* .academics{
+        margin-top: -72px;
+    } */
+  .myac {
+    display: none;
+    position: absolute;
+    top: 4%;
+    width: 266px;
+  }
+  #maintable {
+    position: absolute;
+    top: 92px;
+  }
+  .academicshead {
+    position: relative;
+    margin-top: 13%;
+    left: 0%;
+    width: 179%;
+  }
+  .content {
+    position: absolute;
+    top: 110%;
+    width: -5rem;
+    margin-top: 100%;
+    margin-left: -2rem;
+    text-align: center;
+  }
+  #check {
+    position: absolute;
+    top: 10px;
+    opacity: 0.01;
+    z-index: 13;
+    scale: 1.7;
+    left: 5px;
+  }
+  .nav .logo {
+    text-align: center;
+    position: fixed;
+    left: 12%;
+    top: -0px;
+    font-size: 38px;
+    width: 347px;
+  }
+  .icon {
+    display: block;
+    /* text-align: center; */
+    /* margin-top: 10px; */
+    z-index: 10;
+  }
+  #check {
+    display: block;
+    /* z-index: 10; */
+  }
+  #check:checked ~ .icon .hamburger {
+    display: none;
+  }
+  .cross {
+    display: none;
+    z-index: 12;
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+  }
+  #check:checked ~ .icon .cross {
+    display: block;
+    width: 10px;
+    /* position: relative; */
+    /* top: -100%; */
+  }
+  .cimg {
+    background: rgb(1, 134, 251);
+  }
+  .ham {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+  }
+  .logo {
+    position: absolute;
+    z-index: 6;
+    left: 108px;
+    color: white;
+    top: 6px;
+  }
+  .nav-main {
+    display: block;
+    /* filter: blur(1px); */
+    margin-top: 100px;
+    /* background: rgb(1, 134, 251); */
+  }
+  .nav {
+    position: absolute;
+    top: -170px;
+    display: block;
+    /* text-align: center; */
+    height: 0;
+    /* background: #081b29; */
+    background: rgb(1, 134, 251);
+    width: 93vw;
+    /* margin-left: 130px; */
+    text-align: left;
+    /* background-color: #000; */
+    overflow: auto;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  #check:checked ~ .nav {
+    height: 400px;
+    top: -30px;
+    width: 45vh;
+  }
+  #check:checked ~ .nav .logo {
+    background: rgb(1, 134, 251);
+    color: white;
+  }
+  .nav-main a {
+    background-color: rgb(1, 134, 251);
+    position: relative;
+    top: 0px;
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  #check:checked ~ #maintable {
+    transform: translateY(-500px);
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: white;
+    background-color: black;
+  }
+}

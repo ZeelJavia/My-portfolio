@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #081b29;
+  color: rgba(128, 128, 128, 0.873);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.nav-item {
+  gap: 28px;
+}
+nav {
+  display: flex;
+  list-style: none;
+  gap: 45px;
+  z-index: 10;
+  justify-content: end;
+}
+a:hover {
+  color: #d3dfe8;
+  cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #d3dfe88d;
+  /* padding: 10px; */
+}
+.nav .logo {
+  position: relative;
+  color: rgba(117, 98, 224, 1);
+  font-size: 40px;
+  font-weight: bold;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 28px;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+h2.logo {
+  font-size: 40px;
+  color: rgba(117, 98, 224, 1);
+}
+
+form,
+p {
+  padding: 0;
+  margin: 0;
+  outline: blue;
+  font-size: 14px;
+  line-height: 13px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#h1 {
+  font-size: 27px;
+  /* font-weight: 800; */
+  color: rgba(117, 98, 224, 1);
+  text-align: center;
+}
+
+#h4 {
+  margin: 20px 0 2px;
+  color: rgba(245, 245, 245, 0.766);
+}
+
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  background: #081b29;
+  box-shadow: 0 0px 10px 3px #ccc;
+}
+
+.input {
+  width: calc(100% - 10px);
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 17px;
+  padding-left: 10px;
+  vertical-align: middle;
+  background-color: rgba(128, 128, 128, 0.544);
+  color: #ffe8e8;
+}
+
+.input:hover,
+textarea:hover {
+  outline: none;
+  border: 1px solid #000;
+}
+
+.first-name {
+  margin-bottom: 5px;
+}
+
+th,
+td {
+  width: 21%;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  /* vertical-align: set; */
+  line-height: 18px;
+  font-weight: 400;
+  word-break: break-all;
+}
+
+.first-col {
+  width: 16%;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+}
+
+textarea {
+  color: #000;
+  width: calc(100% - 6px);
+  background: #f7f7f7;
+  border-radius: 5px;
+}
+
+.btn-block {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3d153;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 568px) {
+  th,
+  td {
+    word-break: keep-all;
+  }
+}
+.hamburger,
+.cross,
+#check {
+  display: none;
+}

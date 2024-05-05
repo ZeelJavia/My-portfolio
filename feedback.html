@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="media-feedback.css">
+    <title>Feedback</title>
+</head>
+<body>
+  <input type="checkbox" name="checkbox" id="check">
+  <label for="check"></label>
+  <div class="icon">
+    <div class="hamburger"><img src="./images/hamg.png" alt="">
+      </div>
+      <div class="cross"><img src="./images/cross.png" alt=""></div>
+</div>
+  <div class="nav">
+    <h2 class="logo">Feedback</h2>
+    <nav class="nav-main">
+    <div class="nav-item">
+      <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="academics.html">ACADEMICS</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="achievements.html">ACHIEVEMENTS</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="hobbies.html">HOBBIES</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="startup.html">STARTUP IDEA</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="slogans.html">SLOGAN</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="feedback.html">FEEDBACK</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="contact.html">CONTACT</a>
+    </div>
+  </nav>
+</div>
+    <div class="testbox">
+<form action="home.html" method="get">
+          <p id="h1">Feedback Form</p>
+          <p id="h4">Name<span>*</span></p><br>
+          <input placeholder="Enter your full name" type="text" class="input">
+          <p id="h4">Email<span>*</span></p><br>
+          <input placeholder="Enter your email" type="text" class="input">
+          <p id="h4">What is your overall impression?</p>
+          <table>
+            <tbody><tr>
+              <th class="first-col"></th>
+              <th>Very Satisfied</th>
+              <th>Satisfied</th>
+              <th>Unsatisfied</th>
+              <th>Very Unsatisfied</th>
+            </tr>
+            <tr>
+              <td class="first-col">Professional</td>
+              <td><input name="point#2" value="none" type="radio"></td>
+              <td><input name="point#2" value="none" type="radio"></td>
+              <td><input name="point#2" value="none" type="radio"></td>
+              <td><input name="point#2" value="none" type="radio"></td>
+            </tr>
+          </tbody></table>
+          <p id="h4">Feel free to add any other comments or suggestions:</p><br>
+          <textarea rows="4"></textarea>
+          <div class="btn-block">
+            <button href="/" type="submit">Send Feedback</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+@media only screen and (max-width: 450px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    /* margin-top: 500px; */
+    /* position: absolute; */
+    /* top: 300px; */
+    /* width: 100vw; */
+    background-color: #081b29;
+    /* scale: 0.9; */
+    /* margin: 0 -50px 0 0; */
+  }
+  .cross {
+    display: none;
+  }
+  #check {
+    position: absolute;
+    top: 6.5%;
+    opacity: 0.01;
+    z-index: 150;
+    scale: 2;
+    left: 15px;
+  }
+  .logo {
+    position: absolute;
+    z-index: 6;
+    left: 108px;
+    color: white;
+    top: 6px;
+  }
+  .icon {
+    display: block;
+    text-align: center;
+    /* margin-top: 10px; */
+  }
+  #check {
+    display: block;
+    /* z-index: 10; */
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamg,
+  .cimg {
+    position: absolute;
+    top: 4.4%;
+    left: 1%;
+    border: 0px;
+    z-index: 50;
+    width: 40px;
+  }
+  #check:checked ~ .icon .hamburger {
+    display: none;
+  }
+  #check:checked ~ .icon .cross {
+    display: block;
+    z-index: 100;
+    width: 30px;
+    position: absolute;
+    top: 5.4%;
+  }
+  .cricketimg,
+  .programmingimg,
+  .songimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  article {
+    text-align: center;
+  }
+  .hobbies {
+    margin-top: 100px;
+  }
+  img {
+    margin-top: 10px;
+    width: 90%;
+  }
+  .nav-main {
+    display: none;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  .nav-main {
+    display: block;
+    /* background: rgb(1, 134, 251); */
+    /* filter: blur(1px); */
+  }
+  .nav {
+    position: absolute;
+    top: 35px;
+    display: block;
+    text-align: center;
+    height: 10px;
+    /* background-color: rgb(1, 134, 251); */
+    /* margin-bottom: 10px; */
+    padding-bottom: 30px;
+    /* padding-left:-10px; */
+    padding-right: 20px;
+    width: 90vw;
+    /* margin-left: 130px; */
+    /* background: rgb(1, 134, 251); */
+    text-align: left;
+    /* background-color: #000; */
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  #check:checked ~ .nav {
+    height: 400px;
+    top: 0px;
+    left: -10%;
+    width: 102vw;
+  }
+  .nav-main a {
+    position: relative;
+    left: 10%;
+    top: 5pc;
+    display: block;
+    /* padding: 10px; */
+    font-size: 18px;
+    width: 100%;
+    background-color: rgb(1, 134, 251);
+    padding-top: 10px;
+    /* margin-left: 105px; */
+    /* margin-top: 10px; */
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  .nav .logo {
+    position: absolute;
+    top: 10%;
+    left: 32%;
+    color: rgba(117, 98, 224, 1);
+    /* background-color: rgb(1, 134, 251); */
+    font-size: 45px;
+    font-weight: bold;
+  }
+  #check:checked ~ .nav .nav-item {
+    background: rgb(1, 134, 251);
+  }
+  #check:checked ~ .nav .nav-link {
+    color: black;
+    position: relative;
+    width: 100vw;
+    left: 10px;
+    padding-right: 10pc;
+  }
+  #check:checked ~ .nav .logo {
+    color: white;
+    background: rgb(1, 134, 251);
+    /* width: 120%; */
+    position: absolute;
+    left: 30%;
+  }
+}

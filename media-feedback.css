@@ -1,0 +1,142 @@
+@media only screen and (max-width:450px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        /* margin-top: 500px; */
+        /* position: absolute; */
+        /* top: 300px; */
+        /* width: 100vw; */
+        background-color: #081b29;;
+        /* scale: 0.9; */
+        /* margin: 0 -50px 0 0; */
+    }
+    .cross{
+        display: none;
+    }
+    #check{
+        position: absolute;
+        top: 6.5%;
+        opacity: 0.01;
+        z-index: 150;
+        scale: 2;
+        left: 15px;
+        }
+        .logo{
+            position: absolute;
+            z-index: 6;
+            left: 108px;
+            color: white;
+            top: 6px;
+        }
+            .icon{
+            display: block;
+            text-align: center;
+            /* margin-top: 10px; */
+        }
+        #check{
+            display: block;
+            /* z-index: 10; */
+        }
+        .hamburger{
+            display: block;
+        }
+        .hamburger{
+            position: absolute;
+            top: 6.5%;
+            left: 1%;
+            border: 0px;
+            z-index: 50;
+            width: 40px;
+        }
+            #check:checked~.icon .hamburger{
+                display: none;
+            }
+            #check:checked~.icon .cross{
+                display: block;
+                z-index: 100;
+                width: 30px;
+                position: absolute;
+                top: 6.5%;
+            }
+            .nav-main{
+                display: none;
+            }
+            .hamburger:hover{
+                cursor: pointer;
+            }
+            .nav-main
+            {
+                display: block;
+                /* filter: blur(1px); */
+                /* background: rgb(1, 134, 251); */
+            }
+            .nav{
+                position: absolute;
+                top: 35px;
+                display: block;
+                text-align: left;
+                height: 0;
+                background: #081b29;
+                /* margin-bottom: 10px; */
+                padding-bottom: 30px;
+                /* padding-left:-10px; */
+                padding-right: 20px;
+                width: 85vw;
+                /* margin-left: 130px; */
+                /* text-align: center; */
+                /* background: rgb(1, 134, 251); */
+                /* background-color: #000; */
+                overflow: hidden;
+                transition: 0.5s;
+                z-index: 10;
+            }
+                #check:checked~.nav{
+                    height: 400px;
+                    background-color: rgb(1, 134, 251);
+                    top: -10px;
+                }
+                #check:checked~.nav .nav-item{
+                    background-color: rgb(1, 134, 251);
+                }
+                #check:checked~.nav .logo{
+                    background-color: rgb(1, 134, 251);
+                    color: white;
+                }
+                .nav-main a{
+                    position: relative;
+                    left: -15%;
+                    top: 5.5pc;
+                    display: block;
+                    padding: 10px;
+                    font-size: 18px;
+                    width: 60%;
+                    margin-left: 15px;
+                    /* margin-top: 15px; */
+                    color: #000;
+                    text-decoration: none;
+                    background-color: rgb(1, 134, 251);
+                    transition: 0.5s;
+                }
+                .nav .logo{
+                    position: absolute;
+                    top: 2%;
+                    left: 25%;
+                    color: rgba(117, 98, 224, 1);
+                    font-size: 45px;
+                    font-weight: bold;
+                }
+                .container{
+                    position: absolute;
+                    top: 20%;
+                    width: 80%;
+                    left: 10%;
+                }
+                .testbox{
+                    position: absolute;
+                    width: 41.5vh;
+                    top: 10%;
+                    left: -17%;
+                }
+            }
